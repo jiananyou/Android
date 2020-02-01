@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPwdActivity">
+
+    <TextView
+        android:id="@+id/tv_add_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/add_hint1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_add_title"
+        app:layout_constraintStart_toStartOf="@+id/et_add_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_add_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_add_hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/add_hint2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_add_pwd"
+        app:layout_constraintStart_toStartOf="@+id/et_add_pwd"
+        app:layout_constraintTop_toTopOf="@+id/et_add_title" />
+
+    <EditText
+        android:id="@+id/et_add_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_title" />
+
+    <Button
+        android:id="@+id/bt_add_confirm"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/button_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_generate"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/add_generate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_pwd" />
+
+    <TextView
+        android:id="@+id/tv_add_hint3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="94dp"
+        android:text="位"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_lowercase"
+        app:layout_constraintStart_toEndOf="@+id/et_generate_num"
+        app:layout_constraintTop_toTopOf="@+id/et_add_pwd" />
+
+    <EditText
+        android:id="@+id/et_generate_num"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_add_hint3"
+        app:layout_constraintEnd_toStartOf="@+id/tv_add_hint3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_lowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="210dp"
+        android:checked="true"
+        android:enabled="false"
+        android:text="a-z"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cb_digit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:checked="true"
+        android:enabled="false"
+        android:text="0-9"
+        app:layout_constraintBottom_toTopOf="@+id/cb_at"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_uppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:text="A-Z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/cb_digit"
+        app:layout_constraintTop_toTopOf="@+id/cb_digit" />
+
+    <CheckBox
+        android:id="@+id/cb_amazing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="71dp"
+        android:text="!"
+        app:layout_constraintEnd_toEndOf="@+id/cb_digit"
+        app:layout_constraintEnd_toStartOf="@+id/cb_at"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_lowercase" />
+
+    <CheckBox
+        android:id="@+id/cb_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="164dp"
+        android:text="@"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_amazing" />
+
+</android.support.constraint.ConstraintLayout>
