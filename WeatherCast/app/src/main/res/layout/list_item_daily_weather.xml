@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/re_tv_date"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/re_tv_week"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="week"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/re_iv_cond"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/re_tv_tmp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="tmp"
+        android:textSize="14sp" />
+</LinearLayout>
