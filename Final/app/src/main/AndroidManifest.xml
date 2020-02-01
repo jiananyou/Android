@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afinal189050936">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AddExpendActivity"
+            android:label="添加支出记录">
+        </activity>
+        <activity
+            android:name=".AddIncomeActivity"
+            android:label="添加收入记录">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="注册界面">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="个人理财小助手">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="个人理财小助手">
+        </activity>
+    </application>
+
+</manifest>
